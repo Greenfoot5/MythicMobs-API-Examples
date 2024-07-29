@@ -71,12 +71,12 @@ public class APIExamples extends JavaPlugin implements Listener {
 
 		if(event.getDropName().equalsIgnoreCase("EXAMPLE"))	{
 			event.register(new ExampleItem(event.getConfig(), event.getArgument()));
-			log.info("-- Registered Excample drop!");
+			log.info("-- Registered Example drop!");
 		}
 	}
 
 	/**
-	 * Registers all the custom faction providers when the plugin is loaded
+	 * Registers the custom faction provider when the plugin is loaded
 	 */
 	public void factionProviderLoad(MythicBukkit mythicBukkit) {
 		mythicBukkit.getPlayerManager().registerFactionProvider(new ExampleFactionProvider());
